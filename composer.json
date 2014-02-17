@@ -1,0 +1,21 @@
+{
+    "name": "didww/php-sdk",
+    "description": "DIDWW API 2 PHP SDK",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Igor Gonchar",
+            "email": "igor.g@didww.com"
+        },
+        {
+            "name": "Igor Fedoronchuk",
+            "email": "igor.f@didww.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": { "Didww": "src/"}
+    }
+}
