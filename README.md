@@ -13,16 +13,17 @@ Usage
 -----
 
 Connection initialization
-
+```php  
     $userName = "user@gmail";
     $password = "44AEIRTCH5NE2MAPDXYGKHJHH";
     $testMode = false;
     use Didww\API2\ApiCredentials, Didww\API2\ApiClient as Client;
     Client::setCredentials(new ApiCredentials($userName,$password,$testMode));
     Client::setDebug(false);
+```    
 
 Create DID number
-
+```php    
     use Didww\API2\Order;
     use Didww\API2\MappingToGtalk;
     
@@ -34,32 +35,32 @@ Create DID number
     $order->setCityPrefix(8);
     $order->setPeriod(1);
     $number = $order->createNumber();
-
+```
 Change Mapping
-    
+```php    
     use Didww\API2\MappingToGtalk;
     $order->updateMapping(new MappingToGtalk("anothergooglemail@gmail.com"));
-    
+```    
 
 Customer balance list
-
+```php
     use Didww\API2\Balance;
     $balances =  Balance::getBalanceList();
-    
+```   
     
 
 Working with balance
-
+```php
     $balance = new Balance();
     $balance->setCustomerId(81);
     $balance->synchronizePrepaidBalance();
     echo $balance->getPrepaidBalance();
     $balance->removeFunds(10);
     $balance->addFunds(20);
-
+```
 
 CDR and CDR charges
-
+```php
     use Didww\API2\CDR;
     use Didww\API2\CDRInvoice;
     use Didww\API2\CDRCollection;
@@ -78,16 +79,16 @@ CDR and CDR charges
     $cdrs->setToDate('2012-03-01');
     $cdrs->setCustomerId(85);
     $cdrs->load();
-
+```
 
 Regions
-
+```php
     use Didww\API2\Country;
     $countries = Country::getAll();
-
+```
 
 And much more....
     
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/didww/php-sdk/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
