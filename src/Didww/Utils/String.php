@@ -54,8 +54,12 @@ class String
      */
     public static function camelCase($string, $lcfirst = true)
     {
-        if ($lcfirst) return lcfirst(preg_replace('/_(.?)/e', "strtoupper('$1')", $string));
-        return ucfirst(preg_replace('/(?:^|_)(.?)/e', "strtoupper('$1')", $string));
+        if ($lcfirst) return lcfirst(preg_replace_callback(array(
+                        '/_(.?)/'
+                    ), function ($matches) { return strtoupper($matches[1]); }, $string));
+        return ucfirst(preg_replace_callback(array(
+                        '(?:^|_)(.?)/'
+                    ), function ($matches) { return strtoupper($matches[1]); }, $string));
     }
 
     /**
