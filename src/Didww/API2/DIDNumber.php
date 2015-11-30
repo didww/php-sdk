@@ -537,17 +537,19 @@ class DIDNumber extends ServerObject
             $this->_order->setCityPrefix($properties['city_prefix']);
             $this->_order->setAutorenewEnable($properties['autorenew_enable']);
 
-            $mappingVars = explode(":", $properties['did_mapping_format']);
+            // only URI supporting
+            if (preg_match("/^URI:(\w+)\/(\S+)$/", $properties['did_mapping_format'], $matches)) {
 
-            if (count($mappingVars) == 3) {
-                $mapping = Mapping::create(
-                    array(
-                        "map_type" => $mappingVars[0],
-                        "map_proto" => $mappingVars[1],
-                        "map_detail" => $mappingVars[2]
-                    )
-                );
-                $this->_order->setMapData($mapping);
+                if (count($matches) == 3) {
+                    $mapping = Mapping::create(
+                        array(
+                            "map_type" => 'URI',
+                            "map_proto" => $matches[1],
+                            "map_detail" => $matches[2]
+                        )
+                    );
+                    $this->_order->setMapData($mapping);
+                }
             }
         }
         unset($properties['city_prefix'], $properties['country_iso'], $properties['autorenew_enable']);
@@ -653,7 +655,7 @@ class DIDNumber extends ServerObject
      */
     protected function generateUniqueHash()
     {
-        return $this->_order->getUniqHash() ? :
+        return $this->_order->getUniqHash() ?:
             md5(sprintf("%s.%s.%s.%s.%s.%s",
                 $this->getDIDExpireDateGmt(),
                 $this->getOrderId(),

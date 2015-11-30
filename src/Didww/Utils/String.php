@@ -41,15 +41,13 @@ namespace Didww\Utils;
 
 class String
 {
-
-
     /**
      * Camelize (or Pascalize) a string
      *
      * @example <code>\Didww\Utils\String::camelCase('my_database_field', true);// => MyDatabaseField</code>
      *
      * @param string $string The string to camelize
-     * @param boolea $lcfirst [optional] First char must be lowercase ? Default is false
+     * @param boolean $lcfirst [optional] First char must be lowercase ? Default is false
      * @return string           Camelized string
      */
     public static function camelCase($string, $lcfirst = true)
