@@ -12,7 +12,7 @@ Read more http://open.didww.com/index.php/DIDWW_API_2.0
 Usage
 -----
 
-#####Connection initialization
+###Connection initialization
 ```php  
     $userName = "user@gmail";
     $password = "44AEIRTCH5NE2MAPDXYGKHJHH";
@@ -22,7 +22,7 @@ Usage
     Client::setDebug(false);
 ```    
 
-#####Create DID number
+###Create DID number
 ```php    
     use Didww\API2\Order;
     use Didww\API2\MappingToGtalk;
@@ -36,13 +36,13 @@ Usage
     $order->setPeriod(1);
     $number = $order->createNumber();
 ```
-#####Change Mapping
+###Change Mapping
 ```php    
     use Didww\API2\MappingToGtalk;
     $order->updateMapping(new MappingToGtalk("anothergooglemail@gmail.com"));
 ```    
 
-#####Customer balance list
+###Customer balance list
 ```php
     use Didww\API2\Balance;
     $balances =  Balance::getBalanceList();
