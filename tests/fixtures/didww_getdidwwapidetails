@@ -1,0 +1,31 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_getdidwwapidetails'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_getdidwwapidetails><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string></ns1:didww_getdidwwapidetails></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 13:17:57 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"900f57a7489055df66110999b8d216f5"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: 16215109-aaa4-44b5-ac77-9bc60892e4fe
+            X-Runtime: '0.055430'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_getdidwwapidetailsResponse xmlns:ns1=\"urn:didww\">\n <return xsi:type=\"tns:api_didwwdata\">\n    <result xsi:type=\"xsd:int\">0</result>\n    <error xsi:type=\"xsd:string\">0</error>\n    <api_version xsi:type=\"xsd:string\">Sandbox API v2.0.158</api_version>\n    <reseller_did_pricelist xsi:type=\"xsd:string\">Retail New (Unbundled)</reseller_did_pricelist>\n    <reseller_pstn_tariff xsi:type=\"xsd:string\">Retail Main</reseller_pstn_tariff>\n    <reseller_id xsi:type=\"xsd:int\">157041</reseller_id>\n    <reseller_balance xsi:type=\"xsd:string\">-527.3700</reseller_balance>\n    <reseller_balance_status xsi:type=\"xsd:string\">Active</reseller_balance_status>\n </return>\n</ns1:didww_getdidwwapidetailsResponse>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"

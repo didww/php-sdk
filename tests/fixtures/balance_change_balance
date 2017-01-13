@@ -1,0 +1,61 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_getprepaidbalance'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_getprepaidbalance><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><customer_id xsi:type=\"xsd:string\">81</customer_id></ns1:didww_getprepaidbalance></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 12:59:12 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"694ddbf016d9dec486a87665d857589c"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: bcda557e-c111-41e9-a1aa-2e10c5422304
+            X-Runtime: '0.021477'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_getprepaidbalanceResponse xmlns:ns1=\"urn:didww\">\n    <return xsi:type=\"tns:prepaid_data\">\n        <result xsi:type=\"xsd:int\">0</result>\n        <error xsi:type=\"xsd:string\">0</error>\n        <prepaid_balance xsi:type=\"xsd:string\">5.0</prepaid_balance>\n    </return>\n</ns1:didww_getprepaidbalanceResponse>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_updateprepaidbalance'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_updateprepaidbalance><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><customer_id xsi:type=\"xsd:string\">81</customer_id><prepaid_funds xsi:type=\"xsd:string\">5</prepaid_funds><operation_type xsi:type=\"xsd:int\">1</operation_type><uniq_hash xsi:type=\"xsd:string\">3a5a96ea5f5e389b855fa023bc76e93a</uniq_hash></ns1:didww_updateprepaidbalance></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 12:59:57 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"5876bfa8704903c86f8ef2cef580a8cf"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: 65c505d0-56c7-403f-bd6a-90fb0321cda5
+            X-Runtime: '0.039607'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_updateprepaidbalanceResponse xmlns:ns1=\"urn:didww\">\n    <return xsi:type=\"tns:prepaid_data\">\n        <result xsi:type=\"xsd:int\">0</result>\n        <error xsi:type=\"xsd:string\">0</error>\n        <prepaid_balance xsi:type=\"xsd:string\">5.00000</prepaid_balance>\n    </return>\n</ns1:didww_updateprepaidbalanceResponse>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"

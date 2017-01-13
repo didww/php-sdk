@@ -1,0 +1,31 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_getdidwwregions'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_getdidwwregions><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><country_iso xsi:type=\"xsd:string\">US</country_iso><city_prefix xsi:type=\"xsd:string\">909</city_prefix><last_request_gmt xsi:nil=\"true\"/><city_id xsi:nil=\"true\"/></ns1:didww_getdidwwregions></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 13:14:44 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"02d9beb95a655e0fd74bde80b3a17b5f"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: 19c7399e-1f7c-44c1-9d38-30242de7d8cb
+            X-Runtime: '0.377911'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_getdidwwregionsResponse xmlns:ns1=\"urn:didww\">\n    <return xsi:type=\"SOAP-ENC:Array\" SOAP-ENC:arrayType=\"tns:Regions[1]\">\n        <item xsi:type=\"tns:Regions\">\n            <country_name xsi:type=\"xsd:string\">United States</country_name>\n            <country_prefix xsi:type=\"xsd:string\">1</country_prefix>\n            <country_iso xsi:type=\"xsd:string\">US</country_iso>\n            <cities xsi:type=\"SOAP-ENC:Array\" SOAP-ENC:arrayType=\"tns:City[2]\">\n                <item xsi:type=\"tns:City\">\n                   <city_id xsi:type=\"xsd:string\">50</city_id>\n                   <city_name xsi:type=\"xsd:string\">Ontario</city_name>\n                   <city_prefix xsi:type=\"xsd:string\">909</city_prefix>\n                   <city_nxx_prefix xsi:type=\"xsd:string\"></city_nxx_prefix>\n                   <setup xsi:type=\"xsd:string\">0.00</setup>\n                   <monthly xsi:type=\"xsd:string\">0.09</monthly>\n                   <isavailable xsi:type=\"xsd:int\">1</isavailable>\n                   <islnrrequired xsi:type=\"xsd:int\">0</islnrrequired>\n                </item>\n                <item xsi:type=\"tns:City\">\n                   <city_id xsi:type=\"xsd:string\">531</city_id>\n                   <city_name xsi:type=\"xsd:string\">San Bernardino</city_name>\n                   <city_prefix xsi:type=\"xsd:string\">909</city_prefix>\n                   <city_nxx_prefix xsi:type=\"xsd:string\"></city_nxx_prefix>\n                   <setup xsi:type=\"xsd:string\">0.00</setup>\n                   <monthly xsi:type=\"xsd:string\">0.09</monthly>\n                   <isavailable xsi:type=\"xsd:int\">1</isavailable>\n                   <islnrrequired xsi:type=\"xsd:int\">0</islnrrequired>\n                </item>\n            </cities>\n        </item>\n    </return>\n</ns1:didww_getdidwwregionsResponse>\n\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"

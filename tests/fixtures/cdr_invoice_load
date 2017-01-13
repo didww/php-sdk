@@ -1,0 +1,31 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_callhistory_invoices'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_callhistory_invoices><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><customer_id xsi:type=\"xsd:int\">81</customer_id><from_date xsi:type=\"xsd:string\">2016-12-01</from_date><to_date xsi:type=\"xsd:string\">2016-12-31</to_date></ns1:didww_callhistory_invoices></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 13:00:42 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"a3768f7924ea809b0b7e0ae8b19dee29"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: 463e9c06-cf29-48b7-bf89-a1285175cea0
+            X-Runtime: '0.024357'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_callhistory_invoicesResponse xmlns:ns1=\"urn:didww\">\n    <return xsi:type=\"tns:used_amount_data\">\n        <amount xsi:type=\"xsd:string\">0</amount>\n        <reseller_amount xsi:type=\"xsd:float\">0.0</reseller_amount>\n        <customer_id xsi:type=\"xsd:int\">81</customer_id>\n    </return>\n</ns1:didww_callhistory_invoicesResponse>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"
