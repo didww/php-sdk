@@ -1,0 +1,31 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_getprepaidbalancelist'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_getprepaidbalancelist><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><customer_id xsi:type=\"xsd:string\">0</customer_id></ns1:didww_getprepaidbalancelist></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 12:59:11 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"688cd4d91a0f74b7b4676683f4dbf29c"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: ee02035c-9aee-4e18-b2aa-cd9c9dfb2098
+            X-Runtime: '0.023242'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_getprepaidbalancelistResponse xmlns:ns1=\"urn:didww\">\n    <return xsi:type=\"SOAP-ENC:Array\" SOAP-ENC:arrayType=\"tns:prepaid_data[4]\">\n        <item xsi:type=\"tns:prepaid_data\">\n            <customer_id xsi:type=\"xsd:string\">10</customer_id>\n            <prepaid_balance_amount xsi:type=\"xsd:string\">0.00000</prepaid_balance_amount>\n        </item>\n        <item xsi:type=\"tns:prepaid_data\">\n            <customer_id xsi:type=\"xsd:string\">0</customer_id>\n            <prepaid_balance_amount xsi:type=\"xsd:string\">0.00000</prepaid_balance_amount>\n        </item>\n        <item xsi:type=\"tns:prepaid_data\">\n            <customer_id xsi:type=\"xsd:string\">157041</customer_id>\n            <prepaid_balance_amount xsi:type=\"xsd:string\">0.00000</prepaid_balance_amount>\n        </item>\n        <item xsi:type=\"tns:prepaid_data\">\n            <customer_id xsi:type=\"xsd:string\">81</customer_id>\n            <prepaid_balance_amount xsi:type=\"xsd:string\">5.00000</prepaid_balance_amount>\n        </item>\n    </return>\n</ns1:didww_getprepaidbalancelistResponse>\n\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"

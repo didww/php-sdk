@@ -1,0 +1,29 @@
+language: php
+
+php:
+  - 5.3
+
+install:
+  - composer install
+
+# Create a storage folder for Coverage report
+before_script:
+  - mkdir -p tests/logs
+
+script:
+  - ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml
+
+after_script:
+  - php vendor/bin/coveralls -v
+
+# Configure email notifications
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+
+# delete cache using travis-ci web interface
+cache:
+  directories:
+    - vendor
+    - $HOME/.cache/composer

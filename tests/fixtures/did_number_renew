@@ -1,0 +1,31 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_orderautorenew'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_orderautorenew><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><customer_id xsi:type=\"xsd:string\">81</customer_id><did_number xsi:type=\"xsd:string\">12518068987</did_number><period xsi:type=\"xsd:int\">1</period><uniq_hash xsi:type=\"xsd:string\">e2be12904dd886bd8868ed1f86b8f611</uniq_hash></ns1:didww_orderautorenew></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 13:07:59 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '200 OK'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            ETag: 'W/"9be2391921db3ac9a675caba31f0d1d2"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: 8ea4f756-34e6-41d9-aef7-76ab87707330
+            X-Runtime: '0.265159'
+            Strict-Transport-Security: 'max-age=31536000; includeSubdomains'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <ns1:didww_orderautorenewResponse xmlns:ns1=\"urn:didww\">\n    <return xsi:type=\"tns:service_data\">\n        <result xsi:type=\"xsd:int\">0</result>\n        <country_name xsi:type=\"xsd:string\">United States</country_name>\n        <country_iso xsi:type=\"xsd:string\">US</country_iso>\n        <city_name xsi:type=\"xsd:string\">Mobile</city_name>\n        <city_prefix xsi:type=\"xsd:string\">251</city_prefix>\n        <city_id xsi:type=\"xsd:int\">1537</city_id>\n        <did_number xsi:type=\"xsd:string\">12518068987</did_number>\n        <did_status xsi:type=\"xsd:string\">1</did_status>\n        <did_timeleft xsi:type=\"xsd:string\">5007712</did_timeleft>\n        <did_expire_date_gmt xsi:type=\"xsd:string\">2017-03-12 12:09:50</did_expire_date_gmt>\n        <order_id xsi:type=\"xsd:string\">1876306</order_id>\n        <order_status xsi:type=\"xsd:string\">Completed</order_status>\n        <did_mapping_format xsi:type=\"xsd:string\">URI:IAX2/localhost/username</did_mapping_format>\n        <did_setup xsi:type=\"xsd:string\">0.00</did_setup>\n        <did_monthly xsi:type=\"xsd:string\">0.35</did_monthly>\n        <did_period xsi:type=\"xsd:int\">1</did_period>\n        <autorenew_enable xsi:type=\"xsd:string\">1</autorenew_enable>\n        <prepaid_balance xsi:type=\"xsd:string\">5.00</prepaid_balance>\n    </return>\n</ns1:didww_orderautorenewResponse>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"

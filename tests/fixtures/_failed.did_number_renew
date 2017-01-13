@@ -1,0 +1,29 @@
+
+-
+    request:
+        method: POST
+        url: 'https://sandbox-api.didww.com/api2/index.php'
+        headers:
+            Host: sandbox-api.didww.com
+            Content-Type: 'text/xml; charset=utf-8;'
+            SOAPAction: 'https://sandbox-api.didww.com/api2/index.php/didww_orderautorenew'
+        body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"urn:didww\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:didww_orderautorenew><auth_string xsi:type=\"xsd:string\">95bcf54bdf14c439febbbbc5295f52c4621aa65d</auth_string><customer_id xsi:type=\"xsd:string\">81</customer_id><did_number xsi:type=\"xsd:string\">12518068987</did_number><period xsi:type=\"xsd:int\">1</period><uniq_hash xsi:type=\"xsd:string\">e2be12904dd886bd8868ed1f86b8f611</uniq_hash></ns1:didww_orderautorenew></SOAP-ENV:Body></SOAP-ENV:Envelope>\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '500'
+            message: 'Internal Server Error'
+        headers:
+            Server: nginx
+            Date: 'Fri, 13 Jan 2017 16:08:39 GMT'
+            Content-Type: 'text/xml; charset=ISO-8859-1'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Status: '500 Internal Server Error'
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            Cache-Control: no-cache
+            X-Request-Id: 118d549d-f695-4091-8b43-661153132e66
+            X-Runtime: '0.147221'
+        body: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:didww\"\n    SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n    <SOAP-ENV:Body>\n        <SOAP-ENV:Fault>\n    <faultcode xsi:type=\"xsd:string\">405</faultcode>\n    <faultstring xsi:type=\"xsd:string\">Transaction refused</faultstring>\n    <faultactor xsi:type=\"xsd:string\"/>\n    <detail xsi:type=\"xsd:string\"/>\n</SOAP-ENV:Fault>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"

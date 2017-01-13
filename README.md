@@ -1,5 +1,8 @@
 DIDWW API 2 client for PHP 5.3
 
+[![Build Status](https://travis-ci.org/didww/php-sdk.svg?branch=master)](https://travis-ci.org/didww/php-sdk)
+[![Coverage Status](https://coveralls.io/repos/didww/php-sdk/badge.svg?branch=master&service=github)](https://coveralls.io/github/didww/php-sdk?master)
+
 About DIDWW API 2.0 !
 -----
 
