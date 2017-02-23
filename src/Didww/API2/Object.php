@@ -73,7 +73,7 @@ abstract class Object implements \Didww\Utils\ArrayTransform
     {
         $result = array();
         foreach ($array as $key => $value) {
-            $property = \Didww\Utils\String::camelCase($key);
+            $property = \Didww\Utils\StringUtil::camelCase($key);
 
             $setter = "set" . ucfirst($property);
 
@@ -137,7 +137,7 @@ abstract class Object implements \Didww\Utils\ArrayTransform
             if ($value instanceof Object) {
                 $value = $value->toArray($options);
             }
-            $result[\Didww\Utils\String::snakeCase($key)] = $value;
+            $result[\Didww\Utils\StringUtil::snakeCase($key)] = $value;
         }
         return $result;
     }
@@ -180,4 +180,3 @@ abstract class Object implements \Didww\Utils\ArrayTransform
 
 }
 
- 
