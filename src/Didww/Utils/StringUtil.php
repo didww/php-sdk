@@ -30,7 +30,7 @@
 namespace Didww\Utils;
 
 /**
- * String
+ * StringUtil
  *
  * @category DIDWW
  * @package Utils
@@ -39,12 +39,12 @@ namespace Didww\Utils;
  * @license MIT
  */
 
-class String
+class StringUtil
 {
     /**
      * Camelize (or Pascalize) a string
      *
-     * @example <code>\Didww\Utils\String::camelCase('my_database_field', true);// => MyDatabaseField</code>
+     * @example <code>\Didww\Utils\StringUtil::camelCase('my_database_field', true);// => MyDatabaseField</code>
      *
      * @param string $string The string to camelize
      * @param boolean $lcfirst [optional] First char must be lowercase ? Default is false
@@ -63,7 +63,7 @@ class String
     /**
      * Convert a camel cased or pascal cased string to a snake cased string (with _ for separator)
      *
-     * @example <code>\Didww\Utils\String::snakeCase('myDatabaseField');// => my_database_field</code>
+     * @example <code>\Didww\Utils\StringUtil::snakeCase('myDatabaseField');// => my_database_field</code>
      *
      * @param string $string The string to snake case
      * @return string           Snake cased string
