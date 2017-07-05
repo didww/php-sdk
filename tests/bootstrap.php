@@ -7,7 +7,7 @@ use Didww\API2\ApiCredentials, Didww\API2\ApiClient as Client;
 \VCR\VCR::turnOn(); // Important. Must be here, because of SOAP-requests
 
 
-class BaseTest extends \PHPUnit_Framework_TestCase
+class BaseTest extends PHPUnit\Framework\TestCase
 {
     protected function setUp()
     {
