@@ -1,6 +1,6 @@
 ### :warning: Unmaintained :warning:
 
-API 2 is in mantainence mode 
+API 2 is in maintenance mode
 
 Consider to switch to API 3 https://github.com/didww/didww-api-3-php-sdk
 
